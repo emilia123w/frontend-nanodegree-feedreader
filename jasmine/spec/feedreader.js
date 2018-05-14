@@ -107,12 +107,13 @@ $(function() {
        beforeEach(function(done){
          $('.feed').empty();
          loadFeed(0, function(){
-           entriesFirst = $('.feed').find(allFeeds.url)
+            entriesFirst = $('.feed').find(allFeeds.html)
            done();
-         })
+
          loadFeed(1, function(){
-           entriesSecond = $('.feed').find(allFeeds.url)
+            entriesSecond = $('.feed').find(allFeeds.html)
            done();
+           })
        })
      });
        it('new feed loaded is different than previous', function(){
