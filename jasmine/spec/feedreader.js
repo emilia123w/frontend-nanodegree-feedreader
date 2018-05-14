@@ -90,7 +90,7 @@ $(function() {
          });
        });
        it('there is at least a single entry element within feed container',function(){
-         expect($('.entry .feed')).toBeDefined();
+         expect($('.feed .entry')).toBeDefined();
        })
     })
 
