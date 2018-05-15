@@ -90,7 +90,7 @@ $(function() {
          });
        });
        it('there is at least a single entry element within feed container',function(){
-         expect($('.feed .entry')).toBeDefined();
+         expect($('.feed .entry').length).toBeGreaterThan(0);
        })
     })
 
@@ -108,7 +108,6 @@ $(function() {
          $('.feed').empty();
          loadFeed(0, function(){
             entriesFirst = $('.feed').find(allFeeds.html)
-           done();
 
          loadFeed(1, function(){
             entriesSecond = $('.feed').find(allFeeds.html)
