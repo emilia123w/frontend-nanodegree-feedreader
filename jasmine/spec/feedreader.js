@@ -107,10 +107,10 @@ $(function() {
        beforeEach(function(done){
          $('.feed').empty();
          loadFeed(0, function(){
-            entriesFirst = $('.feed').find(allFeeds.html)
+            entriesFirst = $('.feed').html()
 
          loadFeed(1, function(){
-            entriesSecond = $('.feed').find(allFeeds.html)
+            entriesSecond = $('.feed').html()
            done();
            })
        })
